@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckoutComponent } from './component/checkout/checkout.component';
+import { SuccessComponent } from './component/success/success.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CheckoutComponent } from './component/checkout/checkout.component';
     CartComponent,
     ProductsComponent,
     FilterPipe,
-    CheckoutComponent
+    CheckoutComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
