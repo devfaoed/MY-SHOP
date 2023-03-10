@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/service/api.service';
 import { CartService } from 'src/app/service/cart.service';
+import { Product } from '../../models/Product';
 
 @Component({
   selector: 'app-products',
@@ -8,7 +9,7 @@ import { CartService } from 'src/app/service/cart.service';
   styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent implements OnInit {
-  public productList: any;
+  public productList: Product[] = [];
   public filterCategory: any;
   searchKey: string = '';
   constructor(private api: ApiService, private cartService: CartService) {}
@@ -33,7 +34,7 @@ export class ProductsComponent implements OnInit {
       this.searchKey = val;
     });
   }
-  addtocart(item: any) {
+  addtocart(item: string) {
     this.cartService.addtoCart(item);
     alert('Item added successfully');
   }

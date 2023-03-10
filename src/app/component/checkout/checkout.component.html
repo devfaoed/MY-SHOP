@@ -12,7 +12,7 @@
               id="fname"
               name="firstname"
               placeholder="John M. Doe"
-              [(ngModel)]="firstname" required
+              [(ngModel)]="firstname"   (ngModelChange)="clearFilter()" required
             />
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input
@@ -20,7 +20,7 @@
               id="email"
               name="email"
               placeholder="john@example.com"
-              [(ngModel)]="email" required
+              [(ngModel)]="email"   (ngModelChange)="clearFilter()" required
             />
             <label for="adr"
               ><i class="fa fa-address-card-o"></i> Address</label
@@ -30,7 +30,7 @@
               id="adr"
               name="address"
               placeholder="542 W. 15th Street"
-              [(ngModel)]="address" required
+              [(ngModel)]="address"   (ngModelChange)="clearFilter()" required
             />
             <label for="city"><i class="fa fa-institution"></i> City</label>
             <input
@@ -38,7 +38,7 @@
               id="city"
               name="city"
               placeholder="New York"
-              [(ngModel)]="city" required
+              [(ngModel)]="city"   (ngModelChange)="clearFilter()" required
             />
 
             <div class="row">
@@ -49,7 +49,7 @@
                   id="state"
                   name="state"
                   placeholder="NY"
-                  [(ngModel)]="state" required
+                  [(ngModel)]="state"   (ngModelChange)="clearFilter()" required
                 />
               </div>
               <div class="col-50">
@@ -59,7 +59,7 @@
                   id="zip"
                   name="zip"
                   placeholder="10001"
-                  [(ngModel)]="zip" required
+                  [(ngModel)]="zip"   (ngModelChange)="clearFilter()" required
                 />
               </div>
             </div>
@@ -80,7 +80,7 @@
               id="cname"
               name="cardname"
               placeholder="John More Doe"
-              [(ngModel)]="cardname" required
+              [(ngModel)]="cardname" required   (ngModelChange)="clearFilter()"
             />
             <label for="ccnum">Credit card number</label>
             <input
@@ -89,7 +89,7 @@
               name="cardnumber"
               placeholder="1111-2222-3333-4444"
               [(ngModel)]="cardnumber" required
-              maxlength="16"
+              maxlength="16"   (ngModelChange)="clearFilter()"
             />
             <label for="expmonth">Exp Month</label>
             <input
@@ -97,7 +97,7 @@
               id="expmonth"
               name="expmonth"
               placeholder="September"
-              [(ngModel)]="expmonth" required maxlength="2"
+              [(ngModel)]="expmonth" required maxlength="2"   (ngModelChange)="clearFilter()"
             />
 
             <div class="row">
@@ -108,7 +108,7 @@
                   id="expyear"
                   name="expyear"
                   placeholder="2018"
-                  [(ngModel)]="expyear" required maxlength="2"
+                  [(ngModel)]="expyear" required maxlength="2"   (ngModelChange)="clearFilter()"
                 />
               </div>
               <div class="col-50">
@@ -118,7 +118,7 @@
                   id="cvv"
                   name="cvv"
                   placeholder="352"
-                  [(ngModel)]="cvv" required maxlength="3"
+                  [(ngModel)]="cvv" required maxlength="3"   (ngModelChange)="clearFilter()"
                 />
               </div>
             </div>

@@ -52,4 +52,7 @@ export class CheckoutComponent implements OnInit {
       this.expyear = '';
       this.cvv = '';
   }
+
+  clearFilter(): void {}
+
 }
