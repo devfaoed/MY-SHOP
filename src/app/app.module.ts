@@ -11,6 +11,7 @@ import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckoutComponent } from './component/checkout/checkout.component';
 import { SuccessComponent } from './component/success/success.component';
+import { ProductsDetailsComponent } from './component/products-details/products-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SuccessComponent } from './component/success/success.component';
     ProductsComponent,
     FilterPipe,
     CheckoutComponent,
-    SuccessComponent
+    SuccessComponent,
+    ProductsDetailsComponent
   ],
   imports: [
     BrowserModule,

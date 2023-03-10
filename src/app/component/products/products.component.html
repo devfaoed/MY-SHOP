@@ -68,6 +68,7 @@
           {{ item.description }}
         </p>
         <p><strong>Price:</strong> ${{ item.price }}</p>
+        <a routerLink="products/{{ item.id }}" class="btn btn-info"> Details </a>
         <button class="btn btn-primary" (click)="addtocart(item)">
           Add to cart
         </button>
